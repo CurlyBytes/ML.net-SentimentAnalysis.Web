@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAXGekg70VVkCSOYv6AgNCWAAAAAACAAAAAAAQZgAAAAEAACAAAAAn2yVWtqXGMiLG1E5hQ7jf3FwZu6qz37NjqkSl6VQvUgAAAAAOgAAAAAIAACAAAABoiNWC26uuw2N5Q8XplT4UgQjv+rVTlrOhyNyCMLDpoIAAAACs8DTz+dKxwqSY1+41cnjtN8wwhUzpojHQpBHtNTZIaDqO8ZFkRokR5QXh3UA2J1/9kwf9m6Q+JZmP3zI7cLTyfC2eeYJlWpHRhPT9UgDAtzwHuROuNAlPsmTBNv9787kk1tH+OumLbf8gSDrkMkUvC6ZmecJkD3uRYbXYtVFQUUAAAADOCNgGTWUm4w1Epfaz6unEHhoJJy0QZsmDEWQFVPaCw/qLMcYGFbaGvDhJzl5fhmmveqP7sy6B5DWqo5BQedlO</EncryptedPassword>
+    <_PublishTargetUrl>ftp://waws-prod-sy3-017.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>06/04/2018 19:42:01</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>06/04/2018 20:11:27</publishTime>
+    </File>
+    <File Include="Connected Services/Application Insights/ConnectedService.json">
+      <publishTime>06/04/2018 19:57:22</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Google.Protobuf.dll">
+      <publishTime>12/21/2017 20:23:44</publishTime>
+    </File>
+    <File Include="Microsoft.AI.DependencyCollector.dll">
+      <publishTime>05/21/2018 14:55:46</publishTime>
+    </File>
+    <File Include="Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>05/21/2018 15:08:02</publishTime>
+    </File>
+    <File Include="Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>05/21/2018 20:31:36</publishTime>
+    </File>
+    <File Include="Microsoft.AI.WindowsServer.dll">
+      <publishTime>05/21/2018 15:06:18</publishTime>
+    </File>
+    <File Include="Microsoft.ApplicationInsights.AspNetCore.dll">
+      <publishTime>05/23/2018 22:09:42</publishTime>
+    </File>
+    <File Include="Microsoft.ApplicationInsights.dll">
+      <publishTime>05/21/2018 20:28:02</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Mvc.Razor.Extensions.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>01/19/2018 17:09:04</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>01/19/2018 17:08:46</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Api.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Core.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.CpuMath.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Data.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.FastTree.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.InternalStreams.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.KMeansClustering.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Maml.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.PCA.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.PipelineInference.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.ResultProcessor.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.StandardLearners.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Sweeper.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.Transforms.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.ML.UniversalModelFormat.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>02/20/2018 20:41:26</publishTime>
+    </File>
+    <File Include="Microsoft.WindowsAzure.Storage.dll">
+      <publishTime>05/09/2018 21:13:02</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>01/19/2018 17:08:57</publishTime>
+    </File>
+    <File Include="runtimes/linux-x64/native/libCpuMathNative.so">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="runtimes/linux-x64/native/libFastTreeNative.so">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="runtimes/osx-x64/native/libCpuMathNative.dylib">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="runtimes/osx-x64/native/libFastTreeNative.dylib">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/CpuMathNative.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/FastTreeNative.dll">
+      <publishTime>06/05/2018 08:17:44</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.deps.json">
+      <publishTime>06/06/2018 09:18:08</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.dll">
+      <publishTime>06/06/2018 09:18:06</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.pdb">
+      <publishTime>06/06/2018 09:18:06</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.PrecompiledViews.dll">
+      <publishTime>06/06/2018 09:18:07</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.PrecompiledViews.pdb">
+      <publishTime>06/06/2018 09:18:07</publishTime>
+    </File>
+    <File Include="SentimentAnalysis.Web.runtimeconfig.json">
+      <publishTime>06/06/2018 09:18:08</publishTime>
+    </File>
+    <File Include="SentimentAnalysisModel">
+      <publishTime>06/04/2018 22:09:06</publishTime>
+    </File>
+    <File Include="System.CodeDom.dll">
+      <publishTime>07/19/2017 10:01:30</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>01/19/2018 17:09:00</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>01/19/2018 17:09:00</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>01/19/2018 17:09:00</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>01/19/2018 17:09:00</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>01/19/2018 17:09:00</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>06/06/2018 09:18:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

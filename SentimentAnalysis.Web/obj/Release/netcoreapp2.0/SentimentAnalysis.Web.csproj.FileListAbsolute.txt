@@ -1,0 +1,12 @@
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysis.Web.deps.json
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysis.Web.runtimeconfig.json
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysis.Web.runtimeconfig.dev.json
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysis.Web.dll
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysis.Web.pdb
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.AssemblyInfoInputs.cache
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.AssemblyInfo.cs
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.dll
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\obj\Release\netcoreapp2.0\SentimentAnalysis.Web.pdb
+C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Web\bin\Release\netcoreapp2.0\SentimentAnalysisModel

@@ -1,0 +1,1 @@
+C:\Developer\SentimentAnalysis.Trainer\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
