@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="mldotnetdemo-linux" tags="IisApp">
+  <parameter name="IIS Web Application Name" description="" value="sentiment-api" tags="IisApp">
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Justin\\Downloads\\SentimentAnalysis\.Trainer-20180604T094008Z-001\\SentimentAnalysis\.Trainer\\SentimentAnalysis\.Web\\obj\\Release\\netcoreapp2\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

@@ -22,6 +22,7 @@
             services.AddSingleton<IClassifyService, ClassifyService>();
             services.AddSingleton<IBlobStorageService, BlobStorageService>();
             services.AddSingleton<IAppInsightsLoggerService, AppInsightsLoggerService>();
+            services.AddSingleton<ICacheService, CacheService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

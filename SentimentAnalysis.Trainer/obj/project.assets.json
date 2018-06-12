@@ -41,7 +41,7 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.ML/0.3.0-preview-26605-2": {
+      "Microsoft.ML/0.2.0": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.5.1",
@@ -1011,10 +1011,10 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.ML/0.3.0-preview-26605-2": {
-      "sha512": "3E4sQmG0zGsDnB+A94IRWi0jFoneH7dDmVsquzWhNN4su9OOX/rvcJkZLEXD7RnTfaYxZu99Sq72ln6JtG/DHw==",
+    "Microsoft.ML/0.2.0": {
+      "sha512": "6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
       "type": "package",
-      "path": "microsoft.ml/0.3.0-preview-26605-2",
+      "path": "microsoft.ml/0.2.0",
       "files": [
         ".signature.p7s",
         "build/Microsoft.ML.props",
@@ -1051,7 +1051,7 @@
         "lib/netstandard2.0/Microsoft.ML.UniversalModelFormat.xml",
         "lib/netstandard2.0/Microsoft.ML.dll",
         "lib/netstandard2.0/Microsoft.ML.xml",
-        "microsoft.ml.0.3.0-preview-26605-2.nupkg.sha512",
+        "microsoft.ml.0.2.0.nupkg.sha512",
         "microsoft.ml.nuspec",
         "runtimes/linux-x64/native/libCpuMathNative.so",
         "runtimes/linux-x64/native/libFastTreeNative.so",
@@ -3824,7 +3824,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.ML >= 0.3.0-preview-26605-2",
+      "Microsoft.ML >= 0.2.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -3875,7 +3875,7 @@
         "dependencies": {
           "Microsoft.ML": {
             "target": "Package",
-            "version": "[0.3.0-preview-26605-2, )"
+            "version": "[0.2.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

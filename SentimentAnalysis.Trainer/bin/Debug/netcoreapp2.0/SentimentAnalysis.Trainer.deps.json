@@ -1,14 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "eb07558db0b5aeb1dd69fe3acdd491825abf0faa"
+    "signature": "20e801670878f50326c7e99c80ca50b990bdad3b"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "SentimentAnalysis.Trainer/1.0.0": {
         "dependencies": {
-          "Microsoft.ML": "0.3.0-preview-26605-2"
+          "Microsoft.ML": "0.2.0"
         },
         "runtime": {
           "SentimentAnalysis.Trainer.dll": {}
@@ -39,7 +39,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "Microsoft.ML/0.3.0-preview-26605-2": {
+      "Microsoft.ML/0.2.0": {
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
@@ -475,12 +475,12 @@
       "path": "microsoft.csharp/4.3.0",
       "hashPath": "microsoft.csharp.4.3.0.nupkg.sha512"
     },
-    "Microsoft.ML/0.3.0-preview-26605-2": {
+    "Microsoft.ML/0.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3E4sQmG0zGsDnB+A94IRWi0jFoneH7dDmVsquzWhNN4su9OOX/rvcJkZLEXD7RnTfaYxZu99Sq72ln6JtG/DHw==",
-      "path": "microsoft.ml/0.3.0-preview-26605-2",
-      "hashPath": "microsoft.ml.0.3.0-preview-26605-2.nupkg.sha512"
+      "sha512": "sha512-6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
+      "path": "microsoft.ml/0.2.0",
+      "hashPath": "microsoft.ml.0.2.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",

@@ -19,10 +19,12 @@
         private CloudBlockBlob blockBlob;
 
         private readonly IAppInsightsLoggerService _logger;
+        private readonly ICacheService _cache;
 
-        public BlobStorageService(IAppInsightsLoggerService logger)
+        public BlobStorageService(IAppInsightsLoggerService logger, ICacheService cache)
         {
             _logger = logger;
+            _cache = cache;
 
             this.blobClient = storageAccount.CreateCloudBlobClient();
             this.container = blobClient.GetContainerReference("trained-models");
@@ -31,10 +33,22 @@
 
         public async Task<Stream> DownloadModelAsync()
         {
+            Stream stream = new MemoryStream();
+
             try
             {
-                Stream stream = new MemoryStream();
-                await blockBlob.DownloadToStreamAsync(stream);
+                var cacheEntry = _cache.GetItem("trainedModel");
+
+                if (cacheEntry != null)
+                {
+                    stream = (Stream)cacheEntry;
+                }
+
+                else
+                {
+                    await blockBlob.DownloadToStreamAsync(stream);
+                    _cache.SetItem("trainedModel", stream);
+                }
 
                 return stream;
             }

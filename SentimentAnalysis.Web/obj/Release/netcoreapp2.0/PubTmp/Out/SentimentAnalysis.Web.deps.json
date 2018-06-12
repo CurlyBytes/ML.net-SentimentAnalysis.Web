@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "c6284d91ac6d247c633e8e92c74bd39328354a56"
+    "signature": "ff42489cf198a9248197fedda48ca39034c18a9f"
   },
   "compilationOptions": {
     "defines": [
@@ -26,7 +26,7 @@
           "Microsoft.ApplicationInsights": "2.6.4",
           "Microsoft.ApplicationInsights.AspNetCore": "2.3.0",
           "Microsoft.AspNetCore.All": "2.0.0",
-          "Microsoft.ML": "0.3.0-preview-26605-2",
+          "Microsoft.ML": "0.2.0",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
           "WindowsAzure.Storage": "9.2.0"
@@ -2259,7 +2259,7 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.ML/0.3.0-preview-26605-2": {
+      "Microsoft.ML/0.2.0": {
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
@@ -5662,12 +5662,12 @@
       "hashPath": "microsoft.identitymodel.tokens.5.1.4.nupkg.sha512",
       "runtimeStoreManifestName": "aspnetcore-store-2.0.0-linux-x64.xml;aspnetcore-store-2.0.0-osx-x64.xml;aspnetcore-store-2.0.0-win7-x64.xml;aspnetcore-store-2.0.0-win7-x86.xml"
     },
-    "Microsoft.ML/0.3.0-preview-26605-2": {
+    "Microsoft.ML/0.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3E4sQmG0zGsDnB+A94IRWi0jFoneH7dDmVsquzWhNN4su9OOX/rvcJkZLEXD7RnTfaYxZu99Sq72ln6JtG/DHw==",
-      "path": "microsoft.ml/0.3.0-preview-26605-2",
-      "hashPath": "microsoft.ml.0.3.0-preview-26605-2.nupkg.sha512"
+      "sha512": "sha512-6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
+      "path": "microsoft.ml/0.2.0",
+      "hashPath": "microsoft.ml.0.2.0.nupkg.sha512"
     },
     "Microsoft.Net.Http.Headers/2.0.0": {
       "type": "package",

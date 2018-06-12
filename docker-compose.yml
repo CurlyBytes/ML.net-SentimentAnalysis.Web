@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  sentimentanalysis.web:
-    image: ${DOCKER_REGISTRY}sentimentanalysisweb
-    build:
-      context: .
-      dockerfile: SentimentAnalysis.Web\Dockerfile

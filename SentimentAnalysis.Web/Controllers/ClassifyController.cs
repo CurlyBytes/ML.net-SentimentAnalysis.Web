@@ -21,16 +21,16 @@
         }
         
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery(Name = "usersUtterance")] string usersUtterance)
+        public async Task<IActionResult> Get([FromQuery(Name = "query")] string query)
         {
             try
             {
-                if(string.IsNullOrEmpty(usersUtterance))
+                if(string.IsNullOrEmpty(query))
                 {
                     return BadRequest("usersUtterance url parameter is missing.");
                 }
 
-                var classifedUtterance = await _classifyService.ClassifySentiment(usersUtterance);
+                var classifedUtterance = await _classifyService.ClassifySentiment(query);
 
                 if (!string.IsNullOrEmpty(classifedUtterance))
                 {
