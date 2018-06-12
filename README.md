@@ -9,6 +9,7 @@ The SentimentAnalysis.Trainer project containers a .net Core console app that wi
 Add two Environment Variables:
 
 BlobKey = The primary key for Blob Storage account
+<br />
 AppInsightsKey = Application Insights telemetry key
 
 The SentimentAnalysis.Web project is a ASP.NET core webapi project that you can use to expose the trained model from a rest end-point, currently, it retrieves the trained model from Azure Blob Storage, so you can 'hot swap' trained models in Production.
