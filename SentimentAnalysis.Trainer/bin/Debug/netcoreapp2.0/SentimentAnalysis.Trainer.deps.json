@@ -1,14 +1,14 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "20e801670878f50326c7e99c80ca50b990bdad3b"
+    "signature": "2dd0581a6f9b26ee6d5596da3afb3380b03bab25"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "SentimentAnalysis.Trainer/1.0.0": {
         "dependencies": {
-          "Microsoft.ML": "0.2.0"
+          "Microsoft.ML": "0.3.0"
         },
         "runtime": {
           "SentimentAnalysis.Trainer.dll": {}
@@ -39,14 +39,13 @@
           "System.Threading": "4.3.0"
         }
       },
-      "Microsoft.ML/0.2.0": {
+      "Microsoft.ML/0.3.0": {
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Threading.Tasks.Dataflow": "4.8.0",
-          "System.ValueTuple": "4.4.0"
+          "System.Threading.Tasks.Dataflow": "4.8.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.Api.dll": {},
@@ -71,7 +70,15 @@
             "rid": "linux-x64",
             "assetType": "native"
           },
+          "runtimes/linux-x64/native/libFactorizationMachineNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
           "runtimes/linux-x64/native/libFastTreeNative.so": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/libLdaNative.so": {
             "rid": "linux-x64",
             "assetType": "native"
           },
@@ -79,7 +86,15 @@
             "rid": "osx-x64",
             "assetType": "native"
           },
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native"
+          },
           "runtimes/osx-x64/native/libFastTreeNative.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native"
+          },
+          "runtimes/osx-x64/native/libLdaNative.dylib": {
             "rid": "osx-x64",
             "assetType": "native"
           },
@@ -87,7 +102,15 @@
             "rid": "win-x64",
             "assetType": "native"
           },
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native"
+          },
           "runtimes/win-x64/native/FastTreeNative.dll": {
+            "rid": "win-x64",
+            "assetType": "native"
+          },
+          "runtimes/win-x64/native/LdaNative.dll": {
             "rid": "win-x64",
             "assetType": "native"
           }
@@ -419,7 +442,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.ValueTuple/4.4.0": {},
       "System.Xml.ReaderWriter/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -475,12 +497,12 @@
       "path": "microsoft.csharp/4.3.0",
       "hashPath": "microsoft.csharp.4.3.0.nupkg.sha512"
     },
-    "Microsoft.ML/0.2.0": {
+    "Microsoft.ML/0.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
-      "path": "microsoft.ml/0.2.0",
-      "hashPath": "microsoft.ml.0.2.0.nupkg.sha512"
+      "sha512": "sha512-JsaqAzj6hCT+0y3Mj5gSrZms7cWG/VZQF5nVOHHrJaJx/B3UPEsiJ+26i4TNVGxBNDqKAuFvl5jr70RHx2MjWQ==",
+      "path": "microsoft.ml/0.3.0",
+      "hashPath": "microsoft.ml.0.3.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
@@ -761,13 +783,6 @@
       "sha512": "sha512-npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
       "path": "system.threading.tasks.extensions/4.3.0",
       "hashPath": "system.threading.tasks.extensions.4.3.0.nupkg.sha512"
-    },
-    "System.ValueTuple/4.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+i0XmGv8FoTBgQZdq2Vtcy2d9Wg6KnEX/AiMrOnLzSdBgUcdPJzy90pvmXRlettgx3atKwJWUnlw1gL7mYWM2A==",
-      "path": "system.valuetuple/4.4.0",
-      "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
     },
     "System.Xml.ReaderWriter/4.3.0": {
       "type": "package",

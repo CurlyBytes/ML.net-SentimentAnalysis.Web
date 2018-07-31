@@ -1781,10 +1781,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
+      "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
@@ -1793,12 +1793,12 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/2.1.0": {
+      "Microsoft.Extensions.Caching.Memory/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
+          "Microsoft.Extensions.Caching.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
@@ -1991,7 +1991,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -2260,11 +2260,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {}
         }
       },
-      "Microsoft.Extensions.Options/2.1.0": {
+      "Microsoft.Extensions.Options/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
@@ -2301,11 +2301,11 @@
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/2.1.0": {
+      "Microsoft.Extensions.Primitives/2.1.1": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -2412,15 +2412,14 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.ML/0.2.0": {
+      "Microsoft.ML/0.3.0": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Threading.Tasks.Dataflow": "4.8.0",
-          "System.ValueTuple": "4.4.0"
+          "System.Threading.Tasks.Dataflow": "4.8.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.Api.dll": {},
@@ -2459,11 +2458,15 @@
           "lib/netstandard2.0/Microsoft.ML.dll": {}
         },
         "build": {
-          "build/Microsoft.ML.props": {},
-          "build/Microsoft.ML.targets": {}
+          "build/netstandard2.0/Microsoft.ML.props": {},
+          "build/netstandard2.0/Microsoft.ML.targets": {}
         },
         "runtimeTargets": {
           "runtimes/linux-x64/native/libCpuMathNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libFactorizationMachineNative.so": {
             "assetType": "native",
             "rid": "linux-x64"
           },
@@ -2471,7 +2474,15 @@
             "assetType": "native",
             "rid": "linux-x64"
           },
+          "runtimes/linux-x64/native/libLdaNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
           "runtimes/osx-x64/native/libCpuMathNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
@@ -2479,11 +2490,23 @@
             "assetType": "native",
             "rid": "osx-x64"
           },
+          "runtimes/osx-x64/native/libLdaNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
           "runtimes/win-x64/native/CpuMathNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
           "runtimes/win-x64/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/LdaNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
           }
@@ -4038,7 +4061,7 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.0": {
+      "System.Memory/4.5.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.0"
@@ -4476,7 +4499,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -5236,7 +5259,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "WindowsAzure.Storage/9.2.0": {
+      "WindowsAzure.Storage/9.3.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -6999,10 +7022,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
+      "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
@@ -7011,12 +7034,12 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/2.1.0": {
+      "Microsoft.Extensions.Caching.Memory/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
+          "Microsoft.Extensions.Caching.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
@@ -7209,7 +7232,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -7478,11 +7501,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {}
         }
       },
-      "Microsoft.Extensions.Options/2.1.0": {
+      "Microsoft.Extensions.Options/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
@@ -7519,11 +7542,11 @@
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/2.1.0": {
+      "Microsoft.Extensions.Primitives/2.1.1": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -7630,15 +7653,14 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.ML/0.2.0": {
+      "Microsoft.ML/0.3.0": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Threading.Tasks.Dataflow": "4.8.0",
-          "System.ValueTuple": "4.4.0"
+          "System.Threading.Tasks.Dataflow": "4.8.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.Api.dll": {},
@@ -7678,11 +7700,13 @@
         },
         "native": {
           "runtimes/osx-x64/native/libCpuMathNative.dylib": {},
-          "runtimes/osx-x64/native/libFastTreeNative.dylib": {}
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {},
+          "runtimes/osx-x64/native/libFastTreeNative.dylib": {},
+          "runtimes/osx-x64/native/libLdaNative.dylib": {}
         },
         "build": {
-          "build/Microsoft.ML.props": {},
-          "build/Microsoft.ML.targets": {}
+          "build/netstandard2.0/Microsoft.ML.props": {},
+          "build/netstandard2.0/Microsoft.ML.targets": {}
         }
       },
       "Microsoft.Net.Http.Headers/2.0.0": {
@@ -9633,7 +9657,7 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.0": {
+      "System.Memory/4.5.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.0"
@@ -10050,7 +10074,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -10729,7 +10753,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "WindowsAzure.Storage/9.2.0": {
+      "WindowsAzure.Storage/9.3.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -12492,10 +12516,10 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
+      "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
@@ -12504,12 +12528,12 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/2.1.0": {
+      "Microsoft.Extensions.Caching.Memory/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "2.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
+          "Microsoft.Extensions.Caching.Abstractions": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Options": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
@@ -12702,7 +12726,7 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -12971,11 +12995,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll": {}
         }
       },
-      "Microsoft.Extensions.Options/2.1.0": {
+      "Microsoft.Extensions.Options/2.1.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Primitives": "2.1.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Options.dll": {}
@@ -13012,11 +13036,11 @@
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/2.1.0": {
+      "Microsoft.Extensions.Primitives/2.1.1": {
         "type": "package",
         "dependencies": {
-          "System.Memory": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -13123,15 +13147,14 @@
           "lib/netstandard1.4/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
-      "Microsoft.ML/0.2.0": {
+      "Microsoft.ML/0.3.0": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Threading.Tasks.Dataflow": "4.8.0",
-          "System.ValueTuple": "4.4.0"
+          "System.Threading.Tasks.Dataflow": "4.8.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.Api.dll": {},
@@ -13171,11 +13194,13 @@
         },
         "native": {
           "runtimes/win-x64/native/CpuMathNative.dll": {},
-          "runtimes/win-x64/native/FastTreeNative.dll": {}
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {},
+          "runtimes/win-x64/native/FastTreeNative.dll": {},
+          "runtimes/win-x64/native/LdaNative.dll": {}
         },
         "build": {
-          "build/Microsoft.ML.props": {},
-          "build/Microsoft.ML.targets": {}
+          "build/netstandard2.0/Microsoft.ML.props": {},
+          "build/netstandard2.0/Microsoft.ML.targets": {}
         }
       },
       "Microsoft.Net.Http.Headers/2.0.0": {
@@ -15127,7 +15152,7 @@
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
-      "System.Memory/4.5.0": {
+      "System.Memory/4.5.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.5.0"
@@ -15544,7 +15569,7 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -16223,7 +16248,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "WindowsAzure.Storage/9.2.0": {
+      "WindowsAzure.Storage/9.3.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -17602,27 +17627,27 @@
         "tools/netcoreapp2.0/ef.runtimeconfig.json"
       ]
     },
-    "Microsoft.Extensions.Caching.Abstractions/2.1.0": {
-      "sha512": "iy1Vmykq4/ACf2ssCJcoDvDgNyjVeEMG3b/VaLiER3XET6TdDAsWdhtAudcok9R7YXqHObd0cPbmlS4JIvwpJw==",
+    "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
+      "sha512": "gcPRTtchou4pIEdLYhh9xoBDjwCaCLiTHJaFN2IWJCP+TGJcIHQYblPMftw6fajHER9ZrvPO5RYZUyLmH1eNIA==",
       "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/2.1.0",
+      "path": "microsoft.extensions.caching.abstractions/2.1.1",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.2.1.1.nupkg.sha512",
         "microsoft.extensions.caching.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Caching.Memory/2.1.0": {
-      "sha512": "5UPXpgJJUTd34a/HIzPnnpPl3c0xIuB+zR8x2kTOaS8gx/iekkBUTPtJRFYj3OZoYi83QJsUQ1ZLKxvbY0gvPw==",
+    "Microsoft.Extensions.Caching.Memory/2.1.1": {
+      "sha512": "KV2w9nelcxgl1Y028qmexCcgBK+CtZ18fE2eIypB1lUtLOGBrzP+XhcJTxBYwXPnYPkxazqdzcOfIRxz/Bq2uQ==",
       "type": "package",
-      "path": "microsoft.extensions.caching.memory/2.1.0",
+      "path": "microsoft.extensions.caching.memory/2.1.1",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.2.1.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.2.1.1.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec"
       ]
     },
@@ -17781,15 +17806,15 @@
         "microsoft.extensions.dependencyinjection.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.0": {
-      "sha512": "Y139tetrEc1Y347FoOK8Oqm1S0aq8jPg5m6L4ti9N7ki0o4amSa7XOq048EhpeQnO/9jrVJKlqBdq/aQduW31A==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
+      "sha512": "PW1596sF97gpIc1JuUuYvTmeLfeqC5whbWPsWgJhN0fdwz683him3b/HB0dqhFesVssOjnnA0fEz4+S0gUeBqA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.0",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -18029,15 +18054,15 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.Extensions.Options/2.1.0": {
-      "sha512": "PNsRGgCThrO0sW0JHkAFcycPeGshTuFQ/0Ss6hRM7goZM331bzexYhPVfuOVl9TEpLqC3MLz9DwlLlKSPvGl1Q==",
+    "Microsoft.Extensions.Options/2.1.1": {
+      "sha512": "j0zOfTt1Qm+JDW2m+6Q/aj1m4C8+onudUu4ls/fN69VxruZkMWmX1bPKkbkYIPNNxJsf4k7FOkVq5o1vEFq9pQ==",
       "type": "package",
-      "path": "microsoft.extensions.options/2.1.0",
+      "path": "microsoft.extensions.options/2.1.1",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.2.1.0.nupkg.sha512",
+        "microsoft.extensions.options.2.1.1.nupkg.sha512",
         "microsoft.extensions.options.nuspec"
       ]
     },
@@ -18065,15 +18090,15 @@
         "microsoft.extensions.platformabstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Primitives/2.1.0": {
-      "sha512": "U+TqiIAwTQQVlX/+270Z1pv+4aVOl7/Dd39znQcdDpK8nzbdaEt0qahI0e6ZPb8b/1YvQ/iUeWpuYq91NWjaTg==",
+    "Microsoft.Extensions.Primitives/2.1.1": {
+      "sha512": "Svz25/egj1TsNL4118jyMqkhDiu0l8QYWq2p52P4BBN0GbqwR18ZRIctSP5TTDJy0m0EFC8aB2FOVjGtvEGWSA==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/2.1.0",
+      "path": "microsoft.extensions.primitives/2.1.1",
       "files": [
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.2.1.0.nupkg.sha512",
+        "microsoft.extensions.primitives.2.1.1.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
       ]
     },
@@ -18374,14 +18399,14 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.ML/0.2.0": {
-      "sha512": "6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
+    "Microsoft.ML/0.3.0": {
+      "sha512": "JsaqAzj6hCT+0y3Mj5gSrZms7cWG/VZQF5nVOHHrJaJx/B3UPEsiJ+26i4TNVGxBNDqKAuFvl5jr70RHx2MjWQ==",
       "type": "package",
-      "path": "microsoft.ml/0.2.0",
+      "path": "microsoft.ml/0.3.0",
       "files": [
         ".signature.p7s",
-        "build/Microsoft.ML.props",
-        "build/Microsoft.ML.targets",
+        "build/netstandard2.0/Microsoft.ML.props",
+        "build/netstandard2.0/Microsoft.ML.targets",
         "lib/netstandard2.0/Microsoft.ML.Api.dll",
         "lib/netstandard2.0/Microsoft.ML.Api.xml",
         "lib/netstandard2.0/Microsoft.ML.Core.dll",
@@ -18414,14 +18439,20 @@
         "lib/netstandard2.0/Microsoft.ML.UniversalModelFormat.xml",
         "lib/netstandard2.0/Microsoft.ML.dll",
         "lib/netstandard2.0/Microsoft.ML.xml",
-        "microsoft.ml.0.2.0.nupkg.sha512",
+        "microsoft.ml.0.3.0.nupkg.sha512",
         "microsoft.ml.nuspec",
         "runtimes/linux-x64/native/libCpuMathNative.so",
+        "runtimes/linux-x64/native/libFactorizationMachineNative.so",
         "runtimes/linux-x64/native/libFastTreeNative.so",
+        "runtimes/linux-x64/native/libLdaNative.so",
         "runtimes/osx-x64/native/libCpuMathNative.dylib",
+        "runtimes/osx-x64/native/libFactorizationMachineNative.dylib",
         "runtimes/osx-x64/native/libFastTreeNative.dylib",
+        "runtimes/osx-x64/native/libLdaNative.dylib",
         "runtimes/win-x64/native/CpuMathNative.dll",
-        "runtimes/win-x64/native/FastTreeNative.dll"
+        "runtimes/win-x64/native/FactorizationMachineNative.dll",
+        "runtimes/win-x64/native/FastTreeNative.dll",
+        "runtimes/win-x64/native/LdaNative.dll"
       ]
     },
     "Microsoft.Net.Http.Headers/2.0.0": {
@@ -22724,39 +22755,25 @@
         "system.linq.queryable.nuspec"
       ]
     },
-    "System.Memory/4.5.0": {
-      "sha512": "P56/L4B9vhz0YFTC4qIXFgx+VgMhg3JhCm5/EASihTotyjwmBt2QEAQdmd2tNctYET/w0CRJzVH1cwxgbKGnDQ==",
+    "System.Memory/4.5.1": {
+      "sha512": "vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
       "type": "package",
-      "path": "system.memory/4.5.0",
+      "path": "system.memory/4.5.1",
       "files": [
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
         "lib/netcoreapp2.1/_._",
         "lib/netstandard1.1/System.Memory.dll",
         "lib/netstandard1.1/System.Memory.xml",
         "lib/netstandard2.0/System.Memory.dll",
         "lib/netstandard2.0/System.Memory.xml",
-        "lib/uap10.0.16300/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
         "ref/netcoreapp2.1/_._",
         "ref/netstandard1.1/System.Memory.dll",
         "ref/netstandard1.1/System.Memory.xml",
         "ref/netstandard2.0/System.Memory.dll",
         "ref/netstandard2.0/System.Memory.xml",
-        "ref/uap10.0.16300/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.memory.4.5.0.nupkg.sha512",
+        "system.memory.4.5.1.nupkg.sha512",
         "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -23888,10 +23905,10 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-      "sha512": "6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "sha512": "qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
       "files": [
         ".signature.p7s",
         "LICENSE.TXT",
@@ -23902,13 +23919,11 @@
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/uap10.0.16300/_._",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/uap10.0.16300/_._",
-        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -25810,10 +25825,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "WindowsAzure.Storage/9.2.0": {
-      "sha512": "YmHeWLre+xKUp9mf3QtP00Z3vqgIjc2al5V336A+EulSAXgOYBJduJ0VTiVN0v8iB46VfBvFz5V5nz9D1hqaTg==",
+    "WindowsAzure.Storage/9.3.0": {
+      "sha512": "ph8JP7XcDGrTZvrmWd+22qrUB4iEdp7YK+jiwyuLaxpzEwkkmTo2/Ed9W8jTz9rnaXwYDEmynvoFFXsqyi8ZxA==",
       "type": "package",
-      "path": "windowsazure.storage/9.2.0",
+      "path": "windowsazure.storage/9.3.0",
       "files": [
         ".signature.p7s",
         "lib/net45/Microsoft.WindowsAzure.Storage.dll",
@@ -25829,7 +25844,7 @@
         "lib/wp8/Microsoft.WindowsAzure.Storage.pdb",
         "lib/wpa/Microsoft.WindowsAzure.Storage.dll",
         "lib/wpa/Microsoft.WindowsAzure.Storage.pdb",
-        "windowsazure.storage.9.2.0.nupkg.sha512",
+        "windowsazure.storage.9.3.0.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
     }
@@ -25839,11 +25854,11 @@
       "Microsoft.ApplicationInsights >= 2.6.4",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.3.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.Extensions.Caching.Memory >= 2.1.0",
-      "Microsoft.ML >= 0.2.0",
+      "Microsoft.Extensions.Caching.Memory >= 2.1.1",
+      "Microsoft.ML >= 0.3.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
-      "WindowsAzure.Storage >= 9.2.0"
+      "WindowsAzure.Storage >= 9.3.0"
     ]
   },
   "packageFolders": {
@@ -25856,11 +25871,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Web\\SentimentAnalysis.Web.csproj",
+      "projectUniqueName": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Web\\SentimentAnalysis.Web.csproj",
       "projectName": "SentimentAnalysis.Web",
-      "projectPath": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Web\\SentimentAnalysis.Web.csproj",
+      "projectPath": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Web\\SentimentAnalysis.Web.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Web\\obj\\",
+      "outputPath": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25905,11 +25920,11 @@
           },
           "Microsoft.Extensions.Caching.Memory": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[2.1.1, )"
           },
           "Microsoft.ML": {
             "target": "Package",
-            "version": "[0.2.0, )"
+            "version": "[0.3.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
@@ -25922,7 +25937,7 @@
           },
           "WindowsAzure.Storage": {
             "target": "Package",
-            "version": "[9.2.0, )"
+            "version": "[9.3.0, )"
           }
         },
         "imports": [

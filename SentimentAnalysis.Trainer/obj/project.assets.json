@@ -41,15 +41,14 @@
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
-      "Microsoft.ML/0.2.0": {
+      "Microsoft.ML/0.3.0": {
         "type": "package",
         "dependencies": {
           "Google.Protobuf": "3.5.1",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
-          "System.Threading.Tasks.Dataflow": "4.8.0",
-          "System.ValueTuple": "4.4.0"
+          "System.Threading.Tasks.Dataflow": "4.8.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.ML.Api.dll": {},
@@ -88,11 +87,15 @@
           "lib/netstandard2.0/Microsoft.ML.dll": {}
         },
         "build": {
-          "build/Microsoft.ML.props": {},
-          "build/Microsoft.ML.targets": {}
+          "build/netstandard2.0/Microsoft.ML.props": {},
+          "build/netstandard2.0/Microsoft.ML.targets": {}
         },
         "runtimeTargets": {
           "runtimes/linux-x64/native/libCpuMathNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/linux-x64/native/libFactorizationMachineNative.so": {
             "assetType": "native",
             "rid": "linux-x64"
           },
@@ -100,7 +103,15 @@
             "assetType": "native",
             "rid": "linux-x64"
           },
+          "runtimes/linux-x64/native/libLdaNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
           "runtimes/osx-x64/native/libCpuMathNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/osx-x64/native/libFactorizationMachineNative.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
@@ -108,11 +119,23 @@
             "assetType": "native",
             "rid": "osx-x64"
           },
+          "runtimes/osx-x64/native/libLdaNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
           "runtimes/win-x64/native/CpuMathNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
+          "runtimes/win-x64/native/FactorizationMachineNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
           "runtimes/win-x64/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/LdaNative.dll": {
             "assetType": "native",
             "rid": "win-x64"
           }
@@ -882,15 +905,6 @@
           "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.4.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1011,14 +1025,14 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Microsoft.ML/0.2.0": {
-      "sha512": "6oHWOusORg8lJ07LirPiWUo9KJEU+BcqsiJU0dxbTKGI0Y30ms12vtEnrxCirNqnoKIG6wFL1UGmv6++LstApQ==",
+    "Microsoft.ML/0.3.0": {
+      "sha512": "JsaqAzj6hCT+0y3Mj5gSrZms7cWG/VZQF5nVOHHrJaJx/B3UPEsiJ+26i4TNVGxBNDqKAuFvl5jr70RHx2MjWQ==",
       "type": "package",
-      "path": "microsoft.ml/0.2.0",
+      "path": "microsoft.ml/0.3.0",
       "files": [
         ".signature.p7s",
-        "build/Microsoft.ML.props",
-        "build/Microsoft.ML.targets",
+        "build/netstandard2.0/Microsoft.ML.props",
+        "build/netstandard2.0/Microsoft.ML.targets",
         "lib/netstandard2.0/Microsoft.ML.Api.dll",
         "lib/netstandard2.0/Microsoft.ML.Api.xml",
         "lib/netstandard2.0/Microsoft.ML.Core.dll",
@@ -1051,14 +1065,20 @@
         "lib/netstandard2.0/Microsoft.ML.UniversalModelFormat.xml",
         "lib/netstandard2.0/Microsoft.ML.dll",
         "lib/netstandard2.0/Microsoft.ML.xml",
-        "microsoft.ml.0.2.0.nupkg.sha512",
+        "microsoft.ml.0.3.0.nupkg.sha512",
         "microsoft.ml.nuspec",
         "runtimes/linux-x64/native/libCpuMathNative.so",
+        "runtimes/linux-x64/native/libFactorizationMachineNative.so",
         "runtimes/linux-x64/native/libFastTreeNative.so",
+        "runtimes/linux-x64/native/libLdaNative.so",
         "runtimes/osx-x64/native/libCpuMathNative.dylib",
+        "runtimes/osx-x64/native/libFactorizationMachineNative.dylib",
         "runtimes/osx-x64/native/libFastTreeNative.dylib",
+        "runtimes/osx-x64/native/libLdaNative.dylib",
         "runtimes/win-x64/native/CpuMathNative.dll",
-        "runtimes/win-x64/native/FastTreeNative.dll"
+        "runtimes/win-x64/native/FactorizationMachineNative.dll",
+        "runtimes/win-x64/native/FastTreeNative.dll",
+        "runtimes/win-x64/native/LdaNative.dll"
       ]
     },
     "Microsoft.NETCore.App/2.0.0": {
@@ -3671,49 +3691,6 @@
         "system.threading.tasks.extensions.nuspec"
       ]
     },
-    "System.ValueTuple/4.4.0": {
-      "sha512": "+i0XmGv8FoTBgQZdq2Vtcy2d9Wg6KnEX/AiMrOnLzSdBgUcdPJzy90pvmXRlettgx3atKwJWUnlw1gL7mYWM2A==",
-      "type": "package",
-      "path": "system.valuetuple/4.4.0",
-      "files": [
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net461/System.ValueTuple.xml",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.4.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -3824,7 +3801,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.ML >= 0.2.0",
+      "Microsoft.ML >= 0.3.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -3838,11 +3815,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer.csproj",
+      "projectUniqueName": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer.csproj",
       "projectName": "SentimentAnalysis.Trainer",
-      "projectPath": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer.csproj",
+      "projectPath": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Justin\\Downloads\\SentimentAnalysis.Trainer-20180604T094008Z-001\\SentimentAnalysis.Trainer\\SentimentAnalysis.Trainer\\obj\\",
+      "outputPath": "C:\\Users\\Justin\\Desktop\\ML.net-SentimentAnalysis.Web\\SentimentAnalysis.Trainer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3875,7 +3852,7 @@
         "dependencies": {
           "Microsoft.ML": {
             "target": "Package",
-            "version": "[0.2.0, )"
+            "version": "[0.3.0, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

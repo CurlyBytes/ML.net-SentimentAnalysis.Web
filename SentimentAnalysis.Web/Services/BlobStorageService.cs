@@ -34,7 +34,7 @@
 
         public async Task<Stream> DownloadModelAsync()
         {
-            Stream stream;
+            Stream stream = new MemoryStream();
 
             try
             {
@@ -47,8 +47,9 @@
 
                 else
                 {
-                    await blockBlob.DownloadToStreamAsync(stream);
-                    _cache.Set<Stream>("trainedModel", stream);
+                    stream = new MemoryStream();
+                    await blockBlob.DownloadToStreamAsync(target: stream);
+                    _cache.Set("trainedModel", stream);
                 }
 
                 return stream;

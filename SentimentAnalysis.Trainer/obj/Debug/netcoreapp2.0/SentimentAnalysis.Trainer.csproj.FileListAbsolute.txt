@@ -34,3 +34,15 @@ C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\Sentime
 C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.AssemblyInfo.cs
 C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.dll
 C:\Users\Justin\Downloads\SentimentAnalysis.Trainer-20180604T094008Z-001\SentimentAnalysis.Trainer\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.pdb
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\data\train.tsv
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.deps.json
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.runtimeconfig.json
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.runtimeconfig.dev.json
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.dll
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\bin\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.pdb
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.csproj.CoreCompileInputs.cache
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.AssemblyInfoInputs.cache
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.AssemblyInfo.cs
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.dll
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.pdb
+C:\Users\Justin\Desktop\ML.net-SentimentAnalysis.Web\SentimentAnalysis.Trainer\obj\Debug\netcoreapp2.0\SentimentAnalysis.Trainer.csprojResolveAssemblyReference.cache
