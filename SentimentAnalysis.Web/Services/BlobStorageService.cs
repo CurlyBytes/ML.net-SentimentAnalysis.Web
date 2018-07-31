@@ -3,11 +3,12 @@
     using System;
     using System.IO;
     using System.Threading.Tasks;
+    using Microsoft.Extensions.Caching.Memory;
     using Microsoft.WindowsAzure.Storage;
     using Microsoft.WindowsAzure.Storage.Blob;
     using SentimentAnalysis.Web.Interfaces;
 
-    public class BlobStorageService : IBlobStorageService
+    public class BlobStorageService : BaseService, IBlobStorageService
     {
         CloudStorageAccount storageAccount = new CloudStorageAccount(
         new Microsoft.WindowsAzure.Storage.Auth.StorageCredentials(
@@ -18,10 +19,10 @@
         private CloudBlobContainer container;
         private CloudBlockBlob blockBlob;
 
+        private readonly IMemoryCache _cache;
         private readonly IAppInsightsLoggerService _logger;
-        private readonly ICacheService _cache;
 
-        public BlobStorageService(IAppInsightsLoggerService logger, ICacheService cache)
+        public BlobStorageService(IMemoryCache cache, IAppInsightsLoggerService logger) : base(cache, logger)
         {
             _logger = logger;
             _cache = cache;
@@ -33,21 +34,21 @@
 
         public async Task<Stream> DownloadModelAsync()
         {
-            Stream stream = new MemoryStream();
+            Stream stream;
 
             try
             {
-                var cacheEntry = _cache.GetItem("trainedModel");
+                _cache.TryGetValue("trainedModel", out stream);
 
-                if (cacheEntry != null)
+                if (stream != null)
                 {
-                    stream = (Stream)cacheEntry;
+                    return stream;
                 }
 
                 else
                 {
                     await blockBlob.DownloadToStreamAsync(stream);
-                    _cache.SetItem("trainedModel", stream);
+                    _cache.Set<Stream>("trainedModel", stream);
                 }
 
                 return stream;

@@ -1,17 +1,19 @@
 ﻿namespace SentimentAnalysis.Web.Services
 {
+    using Microsoft.Extensions.Caching.Memory;
     using Microsoft.ML;
     using SentimentAnalysis.Web.Interfaces;
     using SentimentAnalysis.Web.Models;
     using System;
     using System.Threading.Tasks;
 
-    public class ClassifyService : IClassifyService
+    public class ClassifyService : BaseService, IClassifyService
     {
         private readonly IBlobStorageService _blobService;
         private readonly IAppInsightsLoggerService _logger;
 
-        public ClassifyService(IBlobStorageService blobStorage, IAppInsightsLoggerService logger)
+        public ClassifyService(IMemoryCache cache, IAppInsightsLoggerService logger, IBlobStorageService blobStorage) 
+            : base(cache, logger)
         {
             _blobService = blobStorage;
             _logger = logger;

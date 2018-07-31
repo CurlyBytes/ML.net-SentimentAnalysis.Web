@@ -27,7 +27,7 @@
             {
                 if(string.IsNullOrEmpty(query))
                 {
-                    return BadRequest("usersUtterance url parameter is missing.");
+                    return BadRequest("'query' url parameter is missing.");
                 }
 
                 var classifedUtterance = await _classifyService.ClassifySentiment(query);
